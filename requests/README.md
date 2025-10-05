@@ -3,18 +3,14 @@ is README includes excerpts and information from the official Requests documenta
 Requests is a Python library that makes sending HTTP requests simple and elegant. 
 It handles all the low-level details like connections, headers, encoding, and JSON for you.
 
->>> import requests
->>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
->>> r.status_code
-200
->>> r.headers['content-type']
-'application/json; charset=utf8'
->>> r.encoding
-'utf-8'
->>> r.text
-'{"authenticated": true, ...'
->>> r.json()
-{'authenticated': True, ...}
+
+import requests
+# Send a GET request
+response = requests.get("https://httpbin.org/get")
+print("Status Code:", response.status_code)
+print("Content-Type:", response.headers['content-type'])
+print("Response JSON:", response.json())
+
 
 
 | Task                        | Without Requests       | With Requests             |

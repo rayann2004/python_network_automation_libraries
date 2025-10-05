@@ -6,9 +6,13 @@ It handles all the low-level details like connections, headers, encoding, and JS
 
 import requests
 # Send a GET request
+
 response = requests.get("https://httpbin.org/get")
+
 print("Status Code:", response.status_code)
+
 print("Content-Type:", response.headers['content-type'])
+
 print("Response JSON:", response.json())
 
 

@@ -1,4 +1,4 @@
-is README includes excerpts and information from the official Requests documentation (https://pypi.org/project/requests/)
+# Requests Library
 
 Requests is a Python library that makes sending HTTP requests simple and elegant. 
 It handles all the low-level details like connections, headers, encoding, and JSON for you.
@@ -58,4 +58,5 @@ Automatic honoring of .netrc.
 
 Chunked HTTP Requests.
 
+is README includes excerpts and information from the official Requests documentation (https://pypi.org/project/requests/)
 
